@@ -6,7 +6,7 @@ try:
 except:
     print ('Enter number')
     exit()
-print rate, hours
+# print rate, hours
 if hours <= 40:
     pay = rate * hours
 else:
