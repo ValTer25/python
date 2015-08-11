@@ -1,0 +1,23 @@
+inp = raw_input("Enter Hours: ")
+try:
+ hours = float(inp)
+except:
+ print ('Enter number')
+ exit()
+inp = raw_input("Enter Rate: ")
+try:
+ rate = float(inp)
+except:
+ print ('Enter number')
+ exit()
+#print rate, hours
+if hours <= 40:
+ pay = rate * 10
+ print type(pay)
+ print type(rate)
+ print type(hours)
+else:
+ print type(rate)
+ print type(hours)
+ pay = 40 * rate + ( rate * 1,5 * ( hours - 40))
+print pay
